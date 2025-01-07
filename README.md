@@ -33,16 +33,16 @@
 ## ✅ Prednosti in ❌ slabosti
 
 ### ✅ Prednosti
-- **Preprosta uporaba**: LeakCanary je enostaven za uporabo in ne zahteva veliko kode.
-- **Hitro odkrivanje uhajanja pomnilnika**: LeakCanary samodejno zazna uhajanje pomnilnika in vam pošlje obvestilo.
-- **Podrobne informacije**: LeakCanary vam ponuja podrobne informacije o uhajanju pomnilnika, kar vam pomaga hitro najti in odpraviti težavo.
-- **Odprtokodna**: LeakCanary je odprtokodna knjižnica, kar pomeni, da jo lahko prilagodite svojim potrebam.
+- **Preprosta uporaba**: LeakCanary je preprosta za nastavitev in uporabo. Uporabnik jo mora le dodati v odvisnosti projekta.
+- **Samodejna detekcija puščanja pomnilnika**: Samodejno zazna morebitna uhajanja pomnilnika in generira podrobna poročila, vključno s heap dumpi, ki so ključni za odpravljanje težav.
+- **Vizualni prikaz in analize**: Ponuja jasen vizualni prikaz, ki pomaga razvijalcem hitro razumeti, kje v kodi prihaja do uhajanja pomnilnika.
+- **Odprtokodna rešitev**: Ker je LeakCanary odprtokodna, ima skupnost možnost prispevati k njenemu razvoju, poleg tega pa je brezplačna za uporabo.
 
 ### ❌ Slabosti
-- **Zahteva dodatno konfiguracijo**: LeakCanary zahteva dodatno konfiguracijo v vašem projektu, kar lahko nekoliko poveča čas razvoja.
-- **Zahteva dodatno pomnilnik**: LeakCanary uporablja dodaten pomnilnik za zaznavanje uhajanja pomnilnika, kar lahko vpliva na zmogljivost vaše aplikacije.
-- **Nekatere težave z združljivostjo**: LeakCanary morda ne bo deloval z vsemi različicami Androida ali vseh knjižnic, kar lahko povzroči težave pri integraciji.
-- **Nekatere težave z natančnostjo**: LeakCanary morda ne bo vedno natančno zaznal uhajanja pomnilnika, kar lahko povzroči lažne pozitivne ali negativne rezultate.
+- **Uporaba v produkcijskem okolju**:  LeakCanary ni zasnovan za uporabo v produkcijskem okolju, saj vpliva na delovanje aplikacije in poveča porabo pomnilnika.
+- **Analiza heap dumpov je počasna**: Na večjih projektih ali pri zapletenih heap dumpih lahko analiza traja dolgo in lahko zahteva ročne posege za razumevanje določenih problemov.
+- **Zahteva dodatne odvisnosti**:  Njegova integracija poveča velikost APK-ja, kar je lahko težava pri optimizaciji aplikacije.
+- **Omejen obseg funkcionalnosti**: LeakCanary je specifično orodje za uhajanje pomnilnika in ne nudi širše diagnostike glede drugih težav z zmogljivostjo aplikacije.
 
 ## 🛠️ Primer uporabe
 
@@ -55,3 +55,37 @@ dependencies {
   debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
 }
 ```
+
+2. Primer memory leak-a:
+
+```kotlin
+   companion object {
+        lateinit var context: Context
+   }
+```
+
+### Uporaba LeakCanary:
+
+1. Zagon LeakCanary:
+
+![image](images/image1.png)
+
+2. Čakanje na poročilo:
+
+![image](images/2.png)
+
+3. Pregled poročila:
+
+![image](images/3.png)
+
+![image](images/4.png)
+
+
+### Aplikacija LeakCanary
+
+![image](images/6.png)
+
+#### Pregled preteklih poročil:
+
+![image](images/5.png)
+
