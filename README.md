@@ -25,10 +25,10 @@
 
 ## 📊 Statistika in aktivnost
 
-- **Zvezdice na GitHub-u:** ⭐ LeakCanary ima več kot **29.000 zvezdic** [![GitHub stars](https://img.shields.io/github/stars/square/leakcanary?style=flat-square)](Stevilo) kar nam pove da je knjižnica zelo popularna.
-- **Aktivni issue-ji:** 🐛 Trenutno je odprtih **97 aktivnih issue-jev** [![GitHub issues](https://img.shields.io/github/issues/square/leakcanary?style=flat-square)]()
-- **Število forkov:** 🍴 Knjižnica ima dobrih 4000 forkov: [![GitHub forks](https://img.shields.io/github/forks/square/leakcanary?style=flat-square)]()
-- **Zadnji commit:** 🕒 Zadnji commit je bil narejen 29.08.2024: [![GitHub last commit](https://img.shields.io/github/last-commit/square/leakcanary?style=flat-square)]()
+- [![GitHub stars](https://img.shields.io/github/stars/square/leakcanary?style=flat-square)](Stevilo) **Zvezdice na GitHub-u:** ⭐ LeakCanary ima več kot **29.000 zvezdic** kar nam pove da je knjižnica zelo popularna.
+- [![GitHub issues](https://img.shields.io/github/issues/square/leakcanary?style=flat-square)]() **Aktivni issue-ji:** 🐛 Trenutno je odprtih **97 aktivnih issue-jev**
+- [![GitHub forks](https://img.shields.io/github/forks/square/leakcanary?style=flat-square)]() **Število forkov:** 🍴 Knjižnica ima dobrih 4000 forkov
+- [![GitHub last commit](https://img.shields.io/github/last-commit/square/leakcanary?style=flat-square)]() **Zadnji commit:** 🕒 Zadnji commit je bil narejen 29.08.2024
 
 ## ✅ Prednosti in ❌ slabosti
 
